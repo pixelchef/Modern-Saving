@@ -146,7 +146,7 @@ function chart(principal, interest, monthly, payments) {
     amountToY(monthly * payments));
     g.lineTo(paymentToX(payments), amountToY(0));
     g.closePath();
-    g.fillStyle = "#FFA2AE";
+    g.fillStyle = "#FF7676";
     g.fill();
     g.font = "bold 12px sans-serif";
     g.fillText("Total Interest Payments", 20, 20);
@@ -162,7 +162,7 @@ function chart(principal, interest, monthly, payments) {
     }
     g.lineTo(paymentToX(payments), amountToY(0));
     g.closePath();
-    g.fillStyle = "#9B9B9B";
+    g.fillStyle = "#00E88F";
     g.fill();
     g.fillText("Total Equity", 20, 35);
    
@@ -235,11 +235,19 @@ th {
 #zipcode {
     display:none;
 }
+input {
+    border: 1px solid #dadada;
+    line-height: 2;
+    margin: -5px 0 0px 0;
+    padding: 0 5px;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    outline: none;
+}
 button {
         min-width: 7rem;
-    color: #5585ff;
-    border: 1px solid #dadada;
-    background-color: transparent;
+    color: #fff;
+    background-color: #5585ff;
     cursor: pointer;
     line-height: 2;
     margin: 0;
@@ -281,16 +289,16 @@ button {
                         <input id="zipcode" type="number" placeholder="94010" onchange="calculate();">
                     </td>
             <tr>
+            <tr>
+                <th>Approximate Payments:</th>
+                <td>
+                    <button onclick="calculate();">Calculate</button>
+                </td>
+            </tr>
 
     </table>
 
     <table>
-                        <tr>
-                            <th>Approximate Payments:</th>
-                            <td>
-                                <button onclick="calculate();">Calculate</button>
-                            </td>
-                        </tr>
                         <tr>
                             <td>Monthly payment:</td>
                             <td>$<span class="output" id="payment"></span>
