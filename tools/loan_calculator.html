@@ -85,6 +85,7 @@ window.onload = function () {
         document.getElementById("apr").value = localStorage.loan_apr;
         document.getElementById("years").value = localStorage.loan_years;
         document.getElementById("zipcode").value = localStorage.loan_zipcode;
+        calculate();
     }
 };
 function getLenders(amount, apr, years, zipcode) {
@@ -213,6 +214,9 @@ table {
         margin: 2rem 0 0 0;
     justify-content: center;
 }
+h1 {
+    text-align: center;
+}
  .output {
     font-weight: bold;
 }
@@ -294,7 +298,7 @@ button {
             <tr>
     
                 <td>
-                    <button onclick="calculate();">Calculate Loan</button>
+                    <button onclick="calculate();">Calculate</button>
                 </td>
             </tr>
 
