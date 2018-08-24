@@ -186,6 +186,7 @@ function chart(principal, interest, monthly, payments) {
     }
 table {
         display: flex;
+        margin: 2rem 0 0 0;
     justify-content: center;
 }
  .output {
@@ -233,10 +234,6 @@ table {
                 <input id="years" type="number" placeholder="10" step="1" onchange="calculate();">
             </td>
             <tr>
-                <td>Zipcode (to find lenders):</td>
-                <td>
-                    <input id="zipcode" type="number" placeholder="94010" onchange="calculate();">
-                </td>
                 <tr>
                     <th>Approximate Payments:</th>
                     <td>
