@@ -208,6 +208,7 @@ function chart(principal, interest, monthly, payments) {
     line-height: 1.5;
     color: #24292e;
     background-color: #fff;
+    -webkit-tap-highlight-color: transparent;
     }
 table {
         display: flex;
@@ -248,6 +249,25 @@ input {
     font-size: 1.125rem;
     outline: none;
 }
+.flex {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-box-orient: horizontal;
+    box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.flex.center {
+        -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
 button {
         min-width: 7rem;
     color: #fff;
