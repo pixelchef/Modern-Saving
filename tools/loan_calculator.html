@@ -250,6 +250,7 @@ button {
     background-color: #5585ff;
     cursor: pointer;
     line-height: 2;
+    border:none;
     margin: 0;
     padding: 0;
     border-radius: 6px;
@@ -261,7 +262,9 @@ button {
     <table>
         <h1>Loan Calculator</h1>
          <tr>
-            <th>Enter Loan Data:</th>
+            <th>Enter loan data below</th>
+            <td></td>
+            <td></td>
             <td></td>
             <th>Loan Balance, Cumulative Equity, and Interest Payments</th>
         </tr>
@@ -290,9 +293,9 @@ button {
                     </td>
             <tr>
             <tr>
-                <th>Approximate Payments:</th>
+    
                 <td>
-                    <button onclick="calculate();">Calculate</button>
+                    <button onclick="calculate();">Calculate Loan</button>
                 </td>
             </tr>
 
