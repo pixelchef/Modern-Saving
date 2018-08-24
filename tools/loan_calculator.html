@@ -122,7 +122,7 @@ function chart(principal, interest, monthly, payments) {
     amountToY(monthly * payments));
     g.lineTo(paymentToX(payments), amountToY(0));
     g.closePath();
-    g.fillStyle = "#f88";
+    g.fillStyle = "#FFFBC3";
     g.fill();
     g.font = "bold 12px sans-serif";
     g.fillText("Total Interest Payments", 20, 20);
@@ -138,7 +138,7 @@ function chart(principal, interest, monthly, payments) {
     }
     g.lineTo(paymentToX(payments), amountToY(0));
     g.closePath();
-    g.fillStyle = "green";
+    g.fillStyle = "#AFE6D1";
     g.fill();
     g.fillText("Total Equity", 20, 35);
    
@@ -152,7 +152,7 @@ function chart(principal, interest, monthly, payments) {
     }
     g.lineWidth = 3;
     g.stroke();
-    g.fillStyle = "black";
+    g.fillStyle = "#333";
     g.fillText("Loan Balance", 20, 50);
    
     g.textAlign = "center";
