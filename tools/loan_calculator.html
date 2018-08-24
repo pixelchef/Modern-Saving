@@ -215,7 +215,7 @@ table {
         <tr>
             <td>Amount of the loan ($):</td>
             <td>
-                <input id="amount" onchange="calculate();">
+                <input id="amount" type="number" placeholder="10000" step="1" onchange="calculate();">
             </td>
             <td rowspan=8>
                 <canvas id="graph" width="400" height="250"></canvas>
@@ -224,18 +224,18 @@ table {
         <tr>
             <td>Annual interest (%):</td>
             <td>
-                <input id="apr" onchange="calculate();">
+                <input id="apr" type="number" placeholder="3" step="1" onchange="calculate();">
             </td>
         </tr>
         <tr>
             <td>Repayment period (years):</td>
             <td>
-                <input id="years" onchange="calculate();">
+                <input id="years" type="number" placeholder="10" step="1" onchange="calculate();">
             </td>
             <tr>
                 <td>Zipcode (to find lenders):</td>
                 <td>
-                    <input id="zipcode" onchange="calculate();">
+                    <input id="zipcode" type="number" placeholder="94010" onchange="calculate();">
                 </td>
                 <tr>
                     <th>Approximate Payments:</th>
@@ -259,12 +259,6 @@ table {
                     <td>Total interest:</td>
                     <td>$<span class="output" id="totalinterest"></span>
 
-                    </td>
-                </tr>
-                <tr>
-                    <th>Sponsors:</th>
-                    <td colspan=2>Apply for your loan with one of these fine lenders:
-                        <div id="lenders"></div>
                     </td>
                 </tr>
     </table>
