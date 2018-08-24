@@ -198,7 +198,8 @@ table {
 }
 /* For element with id="payment" */
  #graph {
-    border: solid black 1px;
+    border: solid #dadada 1px;
+    border-radius: 6px;
 }
 /* Chart has a simple border */
  th, td {
@@ -206,6 +207,9 @@ table {
 }
 th {
     text-align: left;
+}
+#zipcode {
+    display:none;
 }
 /* Don't center table cells */
 </style><body>
@@ -236,6 +240,9 @@ th {
             <td>
                 <input id="years" type="number" placeholder="10" step="1" onchange="calculate();">
             </td>
+                    <td>
+                        <input id="zipcode" type="number" placeholder="94010" onchange="calculate();">
+                    </td>
             <tr>
                 <tr>
                     <th>Approximate Payments:</th>
