@@ -211,9 +211,7 @@ function chart(principal, interest, monthly, payments) {
     -webkit-tap-highlight-color: transparent;
     }
 table {
-        display: flex;
         margin: 2rem 0 0 0;
-    justify-content: center;
 }
 h1 {
     text-align: center;
@@ -283,7 +281,7 @@ button {
 }
 /* Don't center table cells */
 </style><body>
-    <table>
+    <table class="flex center">
         <h1>Loan Calculator</h1>
          <tr>
             <th>Enter loan data below</th>
@@ -324,7 +322,7 @@ button {
 
     </table>
 
-    <table>
+    <table class="flex center">
                         <tr>
                             <td>Monthly payment:</td>
                             <td>$<span class="output" id="payment"></span>
