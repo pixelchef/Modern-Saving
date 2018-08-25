@@ -158,7 +158,7 @@
             }
             g.lineTo(paymentToX(payments), amountToY(0));
             g.closePath();
-            g.fillStyle = "#00E88F";
+            g.fillStyle = "#4CAF50";
             g.fill();
             g.fillText("Total Equity", 20, 35);
 
@@ -220,12 +220,17 @@
 
         .output {
             font-weight: bold;
+            font-size: 2rem;
         }
 
         /* Calculated values in bold */
 
         #payment {
-            text-decoration: underline;
+            color: #4CAF50;
+        }
+
+        #totalinterest {
+            color: #FF7676;
         }
 
         /* For element with id="payment" */
@@ -345,16 +350,16 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Total payment:</td>
+                    <td>Total interest:</td>
                     <td>$
-                        <span class="output" id="total"></span>
+                        <span class="output" id="totalinterest"></span>
 
                     </td>
                 </tr>
                 <tr>
-                    <td>Total interest:</td>
+                    <td>Total payment:</td>
                     <td>$
-                        <span class="output" id="totalinterest"></span>
+                        <span class="output" id="total"></span>
 
                     </td>
                 </tr>
